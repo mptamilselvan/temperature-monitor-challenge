@@ -34,23 +34,22 @@ Set up Front end temperaturen monitoring web app.
 
 ## 🏗️ System Architecture
 
-![System Architecture]
 
-The system comprises four main components:
+The system comprises three main components:
 
 -   **Frontend**: ReactJs (Nextjs) 
--   **Backend**: Node.js (Nestjs) service for data generation and processing
+-   **Backend**: Node.js (Nestjs) service for data generation and processing (socket)
 -   **Database**: MongoDB for data persistence
--   **Processing**: n8n workflow (preferred) or Node.js processing service
+
 
 ### Processing Method
 
 Used socket connection to transfer data from node
 
--   Front end web app connect backend app using Socket.io.  
--   Once connected , backend will call external api for weather to get current temperature details.
--   Once get the response, it will emit to the front end react app.
--   Reat app will customize and validate the response from backend and show in the page
+-   Front end web app connect to backend api using Socket.io in 3000 port.  
+-   Once connected, then backend api will make call to external api (weather) to get current temperature details.
+-   Once get the response from the api, It will emit to the front end react app.
+-   Reat app will retrive the response using socket.io and validate the content and list in the page
 
 
 
