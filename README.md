@@ -5,12 +5,13 @@
 
 Set up Back end temperaturen monitoring api system.
 
-Create database **"tmc"** in mongodb
-username is **"tamil"** password is **"password"**
-So the connection string will be **"mongodb://tamil:password@localhost:27017/tmc"**
+- Create database **"tmc"** in mongodb
+- username is **"tamil"** password is **"password"**
+- So the connection string will be **"mongodb://tamil:password@localhost:27017/tmc"**
 
 ``` 
-    cd backend/temperature-api
+    git clone https://github.com/mptamilselvan/temperature-monitor-challenge.git
+    cd temperature-monitor-challenge/backend/temperature-api
     cp .env.production .env
     npm install
     npm run start:dev
@@ -23,7 +24,7 @@ So the connection string will be **"mongodb://tamil:password@localhost:27017/tmc
 Set up Front end temperaturen monitoring web app.
 
 ```
-    cd fronend/temperature-web
+    cd temperature-monitor-challenge/fronend/temperature-web
     cp .env.production .env.local
     npm install
     npm run dev
