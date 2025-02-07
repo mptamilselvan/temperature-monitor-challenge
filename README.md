@@ -5,6 +5,10 @@
 
 Set up Back end temperaturen monitoring api system.
 
+Create database **"tmc"** in mongodb
+username is **"tamil"** password is **"password"**
+So the connection string will be **"mongodb://tamil:password@localhost:27017/tmc"**
+
 ``` 
     cd backend/temperature-api
     cp .env.production .env
